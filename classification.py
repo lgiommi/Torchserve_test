@@ -39,12 +39,6 @@ class ClassifierNN(nn.Module):
             x = self.activation(layer(x))
 
         x = torch.sigmoid(self.layers[-1](x))
-        #if self.inference_mode:
-        #    x = torch.sigmoid(self.layers[-1](x))
-        #else:
-        #    x = self.layers[-1](x)
-            
-
         return x
 
     def train(self, mode=True):
