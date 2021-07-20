@@ -98,6 +98,14 @@ java.lang.InterruptedException
 2021-07-20 15:13:39,945 [INFO ] KQueueEventLoopGroup-3-1 ACCESS_LOG - /127.0.0.1:50382 "POST /models?initial_workers=1&batch_size=4&url=pytorch_physics_4.mar HTTP/1.1" 500 3647
 2021-07-20 15:13:39,946 [INFO ] KQueueEventLoopGroup-3-1 TS_METRICS - Requests5XX.Count:1|#Level:Host|#hostname:str957-135.local,timestamp:null
 ```
+And in terminal_1:
+```
+{
+  "code": 500,
+  "type": "InternalServerException",
+  "message": "Failed to start workers for model pytorch_physics_6 version: 1.0"
+}
+```
 I tried to use a simpler handler file [hanlder.py](https://github.com/lgiommi/Torchserve_test/blob/main/handler.py) launching torch-model-archiver but now the error is:
 ```
 2021-07-20 15:36:22,356 [DEBUG] KQueueEventLoopGroup-3-1 org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model pytorch_physics_7
