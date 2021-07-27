@@ -162,7 +162,7 @@ java.lang.InterruptedException
 2021-07-20 15:36:26,626 [INFO ] W-9000-pytorch_physics_7_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-pytorch_physics_7_1.0-stdout
 2021-07-20 15:36:26,637 [INFO ] KQueueEventLoopGroup-3-1 ACCESS_LOG - /127.0.0.1:50751 "POST /models?initial_workers=1&batch_size=4&url=pytorch_physics_7.mar HTTP/1.1" 500 4332
 ```
-I saw that maybe it's better to include the weights in producing the mar file, so I run this
+I saw that maybe it's better to include the weights (obtained during the training phase using MLaaS4HEP) in producing the mar file, so I run this:
 ```
 torch-model-archiver --model-name pytorch_physics_8 --version 1.0 --model-file classification.py --serialized-file pytorch_model_idim_16_8_1.pt --extra-files index_to_name.json,./weights/classifier_weights_29x16x8x1.pt --handler base_handler.py
 ```
