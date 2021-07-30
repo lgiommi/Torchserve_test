@@ -1,3 +1,7 @@
+import torch
+import torch.nn as nn
+import torch.nn.functional as fun
+
 class ClassifierNN(nn.Module):
     """
     Provide a neural network model for classification.
