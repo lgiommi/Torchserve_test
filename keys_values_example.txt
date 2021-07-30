@@ -1,0 +1,14 @@
+In this file are stored: branches keys of data used and examples of sgn and bkg events
+
+{"keys": ["Apla", "Cent", "Spher", "ak4bbDeltaR", "ak4bbEta", "ak4bbPhi", "ak4jetBtag1", "ak4jetBtag2", "ak4jetE1", "ak4jetE2", "ak4jetMass1", "ak4jetMass2", "ak4jetPt1", "ak4jetPt2", "ak8LjetPt", "ak8ak4deltaR1min", "ak8ak4deltaR2min", "ak8sumPt", "genEvtWeight", "jetBtagSub0", "jetBtagSub1", "jetNBSub", "nBJets", "nJets", "t3t1", "t3t2", "tau1", "tau2", "tau3"]}
+
+{'keys': [b'Apla', b'Cent', b'Spher', b'ak4bbDeltaR', b'ak4bbEta', b'ak4bbPhi', b'ak4jetBtag1', b'ak4jetBtag2', b'ak4jetE1', b'ak4jetE2', b'ak4jetMass1', b'ak4jetMass2', b'ak4jetPt1', b'ak4jetPt2', b'ak8LjetPt', b'ak8ak4deltaR1min', b'ak8ak4deltaR2min', b'ak8sumPt', b'genEvtWeight', b'jetBtagSub0', b'jetBtagSub1', b'jetNBSub', b'nBJets', b'nJets', b't3t1', b't3t2', b'tau1', b'tau2', b'tau3']}
+
+Example of signal event taken from
+/Users/luca.giommi/Computer_Windows/Universita/Dottorato/TFaaS/root_files/small/ratio_tau/ttH_signal.root
+
+[0.05617589302602251, 0.7823222297370457, 0.13371084394670266, 0.235272603829917, 0.4236682991206077, 0.17056770181499106, 0.9921762792524551, 0.7623877836592012, 0.03045127523542113, 0.026015070675014587, 0.04391907805429571, 0.07613315848334583, 0.02826198464564689, 0.01100636843294112, 0.06989296862386485, 0.07127312170544155, 0.07273995760384194, 0.12314703293007057, 0.0, 0.9989315424325061, 0.923031607672513, 0.5, 0.3333333333333333, 0.25, 0.18939180861725932, 0.33414325639167786, 0.8283395684926346, 0.5394551997312487, 0.30198281434342367]
+
+Example of background event taken from
+/Users/luca.giommi/Computer_Windows/Universita/Dottorato/TFaaS/root_files/small/ratio_tau/TTBar.root
+[0.24911101973249863, 0.6078143527852214, 0.46230564788715384, 0.5434434129553335, 0.4232281550213112, 0.01113930974984061, 0.19858584055556713, 0.23492999367385478, 0.12178781200041856, 0.03326176990997551, 0.06509939687915083, 0.09067873361011272, 0.07934636359713709, 0.035090796866173994, 0.11743829272669051, 0.34367606906713105, 0.14994304491776636, 0.17381039528168013, 0.6471618177777537, 0.9216685843491865, 0.9709739042394637, 0.0, 0.0, 0.25, 0.4693724140641847, 0.7629470379187799, 0.22082381064264336, 0.17005355507600986, 0.18527049292850514]
