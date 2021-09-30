@@ -1,6 +1,7 @@
 # Torchserve_test
 In this repo you can find the code used for Torchserve testing.
 I chose the ttH analysis use case (used also to test MLaaS4HEP) to train and obtained a PyTorch model.
+You can find [here](https://github.com/lgiommi/Torchserve_test/blob/main/keys_values_example.txt) the name of the branches and an example of signal and background events.
 The definition of the PyTorch model can be found in [classification.py](https://github.com/lgiommi/Torchserve_test/blob/main/classification.py).
 
 The training part of the PyTorch model inside MLaaS4HEP is obtained adding the following code inside [models.py](https://github.com/lgiommi/MLaaS4HEP/blob/master/src/python/MLaaS4HEP/models.py).
