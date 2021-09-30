@@ -27,7 +27,7 @@ class ClassifierNN(nn.Module):
     particular for the output layer activation (see above).
     """
     def __init__(self,
-                 layout=(12, 16, 16, 1),
+                 layout=(29,16,8,1),
                  activation=fun.relu):
         super().__init__()
         self.last_save = None
@@ -71,3 +71,6 @@ class ClassifierNN(nn.Module):
         self.last_save = weight_file_path
         
         return weight_file_path
+
+    def copy(self):
+        return self.state_dict()
