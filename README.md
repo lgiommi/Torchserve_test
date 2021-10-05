@@ -45,7 +45,7 @@ obtaining the following output:
   "status": "Model \"pytorch_physics_3\" Version: 1.0 registered with 1 initial workers"
 }
 ```
-Then I ask for prediction for the event stored in [predict.json](https://github.com/lgiommi/Torchserve_test/blob/main/predict.json) launching:
+Then I ask for prediction for the event stored in [predict_bkg.json](https://github.com/lgiommi/Torchserve_test/blob/main/predict_bkg.json) launching:
 ```
 curl http://localhost:8080/predictions/pytorch_physics_3
 ```
@@ -53,3 +53,8 @@ obtaining:
 ```
 6.588430551346391e-05
 ```
+and for the signal event stored in [predict_signal.json](https://github.com/lgiommi/Torchserve_test/blob/main/predict_signal.json) it gives
+```
+0.4007512331008911
+```
+We also obtain that the TorchServe and Flask approach give the same results in terms of predictions.
