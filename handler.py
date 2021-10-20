@@ -11,6 +11,9 @@ import torch
 import inspect
 import json
 import itertools
+import requests
+from base64 import b64decode
+import ast
 
 logger = logging.getLogger(__name__)
 
@@ -213,9 +216,15 @@ class BaseHandler(abc.ABC):
         self.context = context
         metrics = self.context.metrics
 
-        data=json.load(open("/Users/luca.giommi/Computer_Windows/Universita/Dottorato/TFaaS/torchserve/Torchserve_test/predict.json"))
-        data=data["values"]
-        data_preprocess = self.preprocess(data)
+        for idx, data in enumerate(data):
+            input_text = data.get("data")
+            if input_text is None:
+                input_text = data.get("body")
+            if isinstance(input_text, (bytes, bytearray)):
+                input_text = input_text.decode('utf-8')
+        input_text = input_text.get("data")
+
+        data_preprocess = self.preprocess(input_text)
 
         if not self._is_explain():
             output = self.inference(data_preprocess)
