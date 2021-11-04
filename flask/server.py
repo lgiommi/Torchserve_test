@@ -20,9 +20,8 @@ def upload():
     if request.method == 'POST':
         file = request.files['model']
         filename = secure_filename(file.filename)
-        print(filename)
+        print(filename + " uploaded")
         file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-        print("Baboo")
         #return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
     return '''
     <!doctype html>
