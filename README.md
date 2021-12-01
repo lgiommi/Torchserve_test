@@ -47,7 +47,7 @@ obtaining the following output:
 ```
 Then I ask for prediction for the event stored in [predict_bkg.json](https://github.com/lgiommi/Torchserve_test/blob/main/predict_bkg.json) launching:
 ```
-curl http://localhost:8080/predictions/pytorch_physics_3
+curl -H "Content-Type: application/json" -d @predict_bkg.json http://localhost:8080/predictions/pytorch_physics_3
 ```
 obtaining:
 ```
